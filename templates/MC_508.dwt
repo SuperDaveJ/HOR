@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="undefined">
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript" src="../scripts/APIWrapper.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/SCOFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/access.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/HOR.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/HORFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/myCourse.js"></script>
+<script language="JavaScript">
+initializePage();
+
+function findMenu() {
+	toMenu(false);
+	window.location.href = "../mainmenu.htm?ver=" + verNumber;
+}
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+</script>
+<!-- TemplateBeginEditable name="EditScript" -->
+<script language="JavaScript">
+MM_reloadPage(true);
+function findNext() {
+	var NextPage = ""
+	goNext (NextPage);
+}
+function findBack() {
+	var BackPage = ""
+	goNext (BackPage);
+}
+</script>
+<!-- TemplateEndEditable -->
+</head>
+<body bgcolor="#FFFFFF" onLoad="onpage(); onUnload = "if (closing) exitCourse(false)">
+
+<div id="TopicH" ><!-- TemplateBeginEditable name="EditModuleT" -->House of Representatives - New Employee Orientation <!-- TemplateEndEditable --></div>
+
+<div id="pageN"><!-- TemplateBeginEditable name="EditPageN" -->Page<!-- TemplateEndEditable --></div>
+<div id="question"><!-- TemplateBeginEditable name="EditQtext" -->
+  <p><strong>Self-Check Question</strong></p>
+  <div id="topText" style="position:absolute; width:519px; height:38px; z-index:12; left: 14px; top: 50px; font-weight: normal;">
+    <p>text</p>
+  </div>
+  <!-- TemplateEndEditable --></div>
+<div id="Prompt"><!-- TemplateBeginEditable name="EditPrompt" -->Select Next to continue.<!-- TemplateEndEditable --></div>
+<div id="Next" style="position:relative; visibility:visible;">
+  <p><a href="javascript:findNext()">Next</a></p>
+</div>
+
+
+</body>
+</html>

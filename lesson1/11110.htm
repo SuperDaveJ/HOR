@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+ 
+<title>Emergency Response Overview</title>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../HOR.css" title = "horCSS">
+<script language="JavaScript" type="text/JavaScript" src="../scripts/functions.js"></script>
+
+<script language="JavaScript">
+window.opener = "x";
+ function popConfirm(){
+	if ( intVersion == 2 ) { // Normal version
+		MM_showHideLayers('ExitConfirm','','show')
+	} else {
+		if (confirm("Do you wish to exit the course?")==true) exitCourse();
+	}
+}
+
+
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+</script>
+ 
+<script language="JavaScript">
+<!--
+MM_reloadPage(true);
+
+function onpage() {
+	loadCSS(intVersion);
+	if (intVersion != 1) {
+		//setAudio(audioOn)
+		if (audioOn == 1) MM_controlShockwave('narration','','Play')
+		else MM_controlShockwave('narration','','StopPlay')
+	} else {
+		MM_showHideLayers('Audio_On','','hide'); 
+		MM_showHideLayers('Audio_Off','','hide');
+		MM_showHideLayers('mnuMyCourse','','hide');
+		MM_showHideLayers('MainMenu','','hide');
+		MM_showHideLayers('Exit','','hide');
+		MM_showHideLayers('Next','','hide');
+
+	}	
+}
+
+function findNext() {
+	var NextPage = "11120.htm"
+	goNext (NextPage);
+}
+function findBack() {
+	var BackPage = "11100.htm"
+	goBack (BackPage);
+}
+function findBTC() {
+	var btc = "11010.htm";
+	goBack (btc);
+}
+function findATC() {	var atc = "11060.htm";
+	goBack (atc);
+}
+
+//-->
+</script> 
+<script language="JavaScript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+   var arVersion = navigator.appVersion.split("MSIE")
+   var version = parseFloat(arVersion[1])
+   if ((version >= 5.5) && (document.body.filters)) 
+   {
+      for(var i=0; i<document.images.length; i++)
+      {
+         var img = document.images[i]
+         var imgName = img.src.toUpperCase()
+         if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+         {
+            var imgID = (img.id) ? "id='" + img.id + "' " : ""
+            var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+            var imgStyle = "display:inline-block;" + img.style.cssText 
+            if (img.align == "left") imgStyle = "float:left;" + imgStyle
+            if (img.align == "right") imgStyle = "float:right;" + imgStyle
+            if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+            img.outerHTML = strNewHTML
+            i = i-1
+         }
+      }
+   }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<style type="text/css">
+<!--
+.style6 {font-size: 10px}
+.style7 {color: #FFFFFF}
+-->
+</style>
+ 
+
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style18 {color: #330066; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF"
+ onLoad="MM_preloadImages('../systemImages/exit_2.jpg','../systemImages/coursemap_2.jpg','../systemImages/back_2.jpg','../systemImages/forward_2.jpg')"  >
+
+<a name="skiptonext"></a>
+<div id="TopicH" ></div>
+
+<div id="pageN"></div>
+<div class="ctTitle style24 style21"><strong> After the Constitution</strong></div>
+<div class="ctSubTitle style23 style22"><strong> The Constitution and The House of Representatives</strong></div>
+<div id="ContentFull" > 
+  <p><em>A</em><em>rticle I, Section 2</em></p>
+  <p>Article I, Section 2 of the Constitution defines the rules under which the House operates, including:</p>
+  <ul>
+    <li>House Members serve two year terms</li>
+    <li>House Members must be at least 25 years of age, be a citizen of the United States for at least 7 years, and must be an inhabitant of the state he/she represents</li>
+    <li>House seats are apportioned among the states according to population every tenth year</li><li>Each state is guaranteed at least one representative</li>
+  </ul>
+  </p>
+</div>
+<div id="bottom" >
+  <div align="center">
+    <p>&nbsp;</p>
+    <p><br>
+    <img src="images/g0101_011.png" alt="A photo of the United States Constitution with the text Article I and Section 2 highlighted." width="702" height="218" border="0"></p>
+  </div>
+</div>
+<div id="Prompt"><p class="promptText">Select the right arrow or an item from the left menu to continue.</p></div>
+<div id="508nav">
+  <p><a href="javascript:findNext()">Next</a></p>
+  <p><a href="javascript:findBack()">Back</a> </p>
+  <p><a href="javascript:findMenu()">Main Menu </a></p>
+  <p><a href="javascript:popConfirm()">Exit </a></p>
+</div>
+
+<div id="SkipNav"> <a href="#skiptonext"><img src="../sysimages/skipnav.png" alt="To skip the module map, please ress Enter." width="14" height="14" border="0" align="top"></a></div>
+
+<div id="item1508"></div>
+
+<div class="btnBack"><a href="11100.htm" onMouseOut="MM_swapImgRestore()" onBlur="MM_swapImgRestore()" onMouseOver="MM_swapImage('back','','../systemImages/back_2.jpg',1)" onFocus="MM_swapImage('back','','../systemImages/back_2.jpg',1)"><img src="../systemImages/back_0.jpg" alt="Left Arrow" name="back" width="36" height="32" border="0" id="back"/></a></div>
+<div class="btnNext"><a href="11120.htm" onMouseOut="MM_swapImgRestore()" onBlur="MM_swapImgRestore()" onMouseOver="MM_swapImage('next','','../systemImages/forward_2.jpg',1)" onFocus="MM_swapImage('next','','../systemImages/forward_2.jpg',1)"><img src="../systemImages/forward_0.jpg" alt="Right Arrow" name="next" width="36" height="32" border="0" id="next"/></a></div>
+<div id="MainMenu"><a href="javascript:window.close();" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image2','','../systemImages/mainmenu_1.jpg',1)"><img src="../systemImages/mainmenu_0.jpg" alt="Main Menu Button" name="Image2" width="124" height="32" border="0" id="Image2" onMouseOver="MM_swapImage('Image2','','../systemImages/mainmenu_1.jpg',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div id="Help"><a href="../help/41010.htm" target="_blank" onMouseOver="MM_swapImage('Help','','../systemImages/help_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../systemImages/help_0.jpg" alt="Help" name="Help" width="65" height="33" border="0"></a></div>
+<div id="menu">
+  <p class="navTitle">About the House </p><p class="style18">History of the House</p>  <ul>   
+    <li><a href="11010.htm" class ="navThemeOn">Before the Constitution</a></li>
+    <li><a href="11060.htm" class ="navThemeOn">After the Constitution</a></li>
+  </ul>
+  <p class="style18">Today's House</p>  <ul>    
+    <li><a href="../lesson2/12010.htm" class="navThemeOn">House Leadership</a></li>
+    <li><a href="../lesson2/12080.htm" class="navThemeOn">House Committees</a></li>
+    <li><a href="../lesson2/12130.htm" class="navThemeOn">House Officers</a></li>
+    <li><a href="../lesson2/12180.htm" class="navThemeOn">House Employees</a></li>
+    <li><a href="../lesson2/12210.htm" class="navThemeOn">Legislative Branch Agencies</a></li>
+    <li><a href="../lesson2/12280.htm" class="navThemeOn">Capitol Campus</a></li>
+  </ul>
+</div>
+<script type="text/javascript" src="../scripts/IEfix.js"></script>
+
+<div id="ExitConfirm">
+  <table width="100%" height="48" border="0" align="center" cellpadding="0" cellspacing="0" background="../systemImages/exitBox2.jpg" nowrap>
+    <tr>
+      <td width="59%" valign="middle"><div align="right"><span class="style5 style2"> Do you wish to exit the course?&nbsp;&nbsp;</span></div></td>
+      <td width="41%" valign="middle"><div align="right"><a href="javascript:exitCourse(true);"><img src="../systemImages/yes_0.jpg" alt="yes button" width="64" height="27" border="0" id="Image5" onMouseOver="MM_swapImage('Image5','','../systemImages/yes_2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a> &nbsp;&nbsp;<a href="javascript:MM_showHideLayers('ExitConfirm','','hide');"><img src="../systemImages/no_0.jpg" alt="no button" width="64" height="27" border="0" id="Image6" onMouseOver="MM_swapImage('Image6','','../systemImages/no_2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+    </tr>
+  </table>
+</div>
+<SPAN id=csscheck style="FONT-SIZE: 15px; VISIBILITY: hidden">DEVIC</SPAN>
+
+</body>
+</html>

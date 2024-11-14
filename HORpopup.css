@@ -1,0 +1,64 @@
+/* css Zen Garden default style v1.01 */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+body { 
+	font: 12px arial; 
+	background-color: f5eff1; 
+	margin: 0px; 
+	}
+p {
+	font: 12px arial; 
+	font-style: normal;
+	margin-top: 0px; 
+	text-align: left;
+}
+.popupH {
+	font: bold 13px Arial;
+	margin-top: 0px; 
+	text-align: left;
+}
+.popupContent {
+	font: 12px arial; 
+	font-style: normal;
+}
+#popupText {
+	position:absolute; 
+	left:25;
+	top:20;
+	width:290px; 
+	height:115px; 
+	z-index:2;
+}
+#graphic {
+	position:absolute; 
+	left:320;
+	top:25px;
+	width:0px; 
+	height:100px; 
+	z-index:3;
+}
+#noGraphicPopupText {
+	position:absolute; 
+	left:25;
+	top:20;
+	width:500px; 
+	height:115px; 
+	z-index:2;
+}
+
+#closebtn {
+	position:absolute; 
+	left:320;
+	top:125px;
+	width:35px; 
+	height:20px; 
+	z-index:7;
+}

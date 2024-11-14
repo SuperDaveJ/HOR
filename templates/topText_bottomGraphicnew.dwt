@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" --> 
+<title>Untitled Document</title>
+<!-- TemplateEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../HOR.css" title = "horCSS">
+<script language="JavaScript" type="text/JavaScript" src="../scripts/APIWrapper.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/SCOFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/access.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/HOR.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/HORFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../scripts/myCourse.js"></script>
+
+<script language="JavaScript">
+window.opener = "x";
+function findLessonMenu() {
+	toMenu(false);
+	window.location.href = "../lesson1menu.htm";
+}
+
+
+
+
+function popConfirm(){
+	if ( intVersion == 2 ) { // Normal version
+		MM_showHideLayers('ExitConfirm','','show')
+	} else {
+		if (confirm("Do you wish to exit the course?")==true) exitCourse();
+	}
+}
+
+initializePage();
+
+function findMenu() {
+	toMenu(false);
+	window.location.href = "../mainmenu.htm?ver=" + verNumber;
+}
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+</script>
+<!-- TemplateBeginEditable name="EditScript" --> 
+<script language="JavaScript">
+MM_reloadPage(true);
+
+function popConfirm(){
+	if ( intVersion == 2 ) { // Normal version
+		MM_showHideLayers('ExitConfirm','','show')
+	} else {
+		if (confirm("Do you wish to exit the course?")==true) exitCourse();
+	}
+}
+
+
+function findNext() {
+	var NextPage = ""
+	goNext (NextPage);
+}
+function findBack() {
+	var BackPage = ""
+	goNext (BackPage);
+}
+</script>
+<!-- TemplateEndEditable --> 
+
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF"
+ onLoad="onpage(); createMy508Course();MM_preloadImages('../systemImages/exit_2.jpg','../systemImages/coursemap_2.jpg','../systemImages/back_2.jpg','../systemImages/forward_2.jpg')" onUnload = "closePopup(); if (closing) exitCourse(false)" >
+
+<a name="skiptonext"></a>
+<div id="TopicH" ><!-- TemplateBeginEditable name="EditModuleT" --><!-- TemplateEndEditable --></div>
+
+<div id="pageN"><!-- TemplateBeginEditable name="EditPageN" -->Page # of # <!-- TemplateEndEditable --></div>
+<div id="ContentTop" ><!-- TemplateBeginEditable name="EditContents" --> 
+  <p><strong>Page title</strong></p>
+  <p>Contents</p>
+  <p>&nbsp;</p>
+<!-- TemplateEndEditable --></div>
+<div id="graphicBottom" ><!-- TemplateBeginEditable name="EditGraphic" -->
+  <div align="center"><img alt="graphic place holder" width="585" height="207" border="0"></div>
+<!-- TemplateEndEditable --></div>
+<div id="Prompt"><!-- TemplateBeginEditable name="EditPrompt" -->
+  <div align="left">Select the right arrow to continue.</div>
+<!-- TemplateEndEditable --></div>
+<div id="508nav">
+  <p><a href="javascript:findNext()">Next</a></p>
+  <p><a href="javascript:findBack()">Back</a> </p>
+  <p><a href="javascript:findMenu()">Main Menu </a></p>
+  <p><a href="javascript:popConfirm()">Exit </a></p>
+</div>
+
+<div id="SkipNav"> <a href="#skiptonext"><img src="../sysimages/skipnav.png" alt="To skip the module map, please ress Enter." width="14" height="14" border="0" align="top"></a></div>
+
+<div id="item1508"><!-- TemplateBeginEditable name="Edit508map" --><!-- TemplateEndEditable --></div>
+
+<div id="Next"><img src="../systemImages/forward_0.jpg" alt="Right Arrow" width="36" height="32" id="Image4" onMouseOver="MM_swapImage('Image4','','../systemImages/forward_2.jpg',1)" onClick="MM_callJS('findNext()')" onMouseOut="MM_swapImgRestore()"></div>
+<div id="Back"><img src="../systemImages/back_0.jpg" alt="Left Arrow" width="36" height="32" id="Image3" onMouseOver="MM_swapImage('Image3','','../systemImages/back_2.jpg',1)" onClick="MM_callJS('findBack()')" onMouseOut="MM_swapImgRestore()"></div>
+<div id="MainMenu"><a href="javascript:window.close();" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image2','','../systemImages/mainmenu_1.jpg',1)"><img src="../systemImages/mainmenu_0.jpg" alt="Main Menu Button" name="Image2" width="124" height="32" border="0" id="Image2" onMouseOver="MM_swapImage('Image2','','../systemImages/mainmenu_1.jpg',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div id="Help"><a href="../help/41010.htm" target="_blank" onMouseOver="MM_swapImage('Help','','../systemImages/help_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../systemImages/help_0.jpg" alt="Help" name="Help" width="65" height="33" border="0"></a></div><div id="Exit">
+  <div id="layer"><img src="../systemImages/exit_0.jpg" alt="Exit Button" width="69" height="24" id="Image1"  onClick="MM_callJS('popConfirm()')" onMouseOver="MM_swapImage('Image1','','../systemImages/exit_2.jpg',1)" onMouseOut="MM_swapImgRestore()"></div>
+</div>
+
+<script type="text/javascript" src="../scripts/IEfix.js"></script>
+
+<div id="ExitConfirm">
+  <table width="100%" height="48" border="0" align="center" cellpadding="0" cellspacing="0" background="../systemImages/exitBox2.jpg" nowrap>
+    <tr>
+      <td width="59%" valign="middle"><div align="right"><span class="style5 style2"> Do you wish to exit the course?&nbsp;&nbsp;</span></div></td>
+      <td width="41%" valign="middle"><div align="right"><a href="javascript:exitCourse(true);"><img src="../systemImages/yes_0.jpg" alt="yes button" width="64" height="27" border="0" id="Image5" onMouseOver="MM_swapImage('Image5','','../systemImages/yes_2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a> &nbsp;&nbsp;<a href="javascript:MM_showHideLayers('ExitConfirm','','hide');"><img src="../systemImages/no_0.jpg" alt="no button" width="64" height="27" border="0" id="Image6" onMouseOver="MM_swapImage('Image6','','../systemImages/no_2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+    </tr>
+  </table>
+</div>
+<SPAN id=csscheck style="FONT-SIZE: 15px; VISIBILITY: hidden">DEVIC</SPAN>
+
+</body>
+</html>

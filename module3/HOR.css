@@ -1,0 +1,583 @@
+/* NRC css */
+/* all the font classes follow p and start with .nameOftheClass */
+/* all the font ID start with #nameOftheID*/
+
+
+/* basic elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	/*background: url(../sysimages/interface_03s.jpg) repeat-y; /*
+	background: url(sysImages/interface_whitescreen.jpg) no-repeat top left;*/
+	min-height: 100%; 
+	margin: 10px;
+	}
+html{ 
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+} 	
+hr{
+	color: #000000;
+	background-color: #000000;
+	height: 1px;
+	margin-bottom:1px;
+	margin-top:1px;
+	
+}
+table.tcMain {
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	width: 715px;
+	margin-top: 0px;
+	left: 282px;
+	font-size:12px;
+}
+
+a:link {  
+	text-decoration: underline; 
+	color: #FFFFFF;
+	}
+a:visited {
+	color: #FFFFFF;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	}
+/* Handles the links formating for Navigation Window */
+A.navThemeOn {							
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.navThemeOn:link {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.navThemeOn:visited {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.navThemeOn:hover {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}	
+A.navThemeOn:active{
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.anchorThemeOn {							
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.anchorThemeOn:link {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.anchorThemeOn:visited {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+A.anchorThemeOn:hover {
+	COLOR: #330066; TEXT-DECORATION: underline;
+}	
+A.anchorThemeOn:active{
+	COLOR: #330066; TEXT-DECORATION: underline;
+}
+/* Handles the links formating for Navigation Window */
+A.navSelected {							
+	COLOR: #990000; TEXT-DECORATION: underline;
+}
+A.navSelected:link {
+	COLOR: #990000; TEXT-DECORATION: underline;
+}
+A.navSelected:visited {
+	COLOR: #990000; TEXT-DECORATION: underline;
+}
+A.navSelected:hover {
+	COLOR: #990000; TEXT-DECORATION: underline;
+}	
+A.navSelected:active{
+	COLOR: #990000; TEXT-DECORATION: underline;
+}
+/* Handles the links formating for Navigation Window */
+A.navParent {							
+	COLOR: #330066; TEXT-DECORATION: underline; font-weight: bold;
+}
+A.navParent:link {
+	COLOR: #330066; TEXT-DECORATION: underline; font-weight: bold;
+}
+A.navParent:visited {
+	COLOR: #330066; TEXT-DECORATION: underline; font-weight: bold;
+}
+A.navParent:hover {
+	COLOR: #330066; TEXT-DECORATION: underline; font-weight: bold;;
+}	
+A.navParent:active{
+	COLOR: #330066; TEXT-DECORATION: underline; font-weight: bold;;
+}
+li.menuSelected{
+	padding-top: 8px; 
+	margin-bottom: 3pt;
+}
+img.imgPadding{
+padding:15px;
+
+}
+
+ul {
+	margin-left: 20px;
+	margin-top: -5px;
+	padding: 0px;
+	}
+li {
+	padding-top: 0px; 
+	margin-bottom: 3pt;
+	}
+
+/* font IDs
+#508nav {
+	position:relative;
+	left:0px;
+	top:400px;
+	width:100px;
+	height:33px;
+	z-index:1;
+	visibility: hidden;
+}*/
+.btnBackDynamic {
+	position:relative;
+	left:904px;
+	bottom:41px; 
+	width:8px; 
+	height:33px; 
+	z-index:6;
+}
+.btnNextDynamic {
+	position:relative;
+	left:943px;
+	bottom:73px; 
+	width:30px; 
+	height:35px; 
+	z-index:6;
+}
+
+.btnBack {
+	position:absolute;
+	left:904px;
+	top:626px; 
+	width:8px; 
+	height:33px; 
+	z-index:1;
+}
+.btnNext {
+	position:absolute;
+	left:943px;
+	top:626px; 
+	width:30px; 
+	height:35px; 
+	z-index:2;
+}
+
+.bgExpand {
+	position:absolute; 
+	left:0px;
+	top:225px;
+	width:729px; 
+	font-size:12px; 
+	z-index:2;
+	min-height: 100%; /* for compliant browsers  
+    background: url(../sysimages/interface_03s.jpg) repeat-y; */
+}
+.bgExpandOnly{
+	position:absolute; 
+	left:0px;
+	top:0px;
+	width:1019px; 
+	font-size:12px; 
+	z-index:-3;
+	min-height: 100%; /* for compliant browsers*/  
+    background: url(../sysimages/interface_03s.jpg) repeat-y; 
+}
+.bgStatic {
+	position:absolute; 
+	left:0px;
+	top:225px;
+	width:729px; 
+	height:648px; 
+	font-size:12px; 
+	z-index:1;
+		background-image: url(../sysimages/interface_01.jpg);
+}
+#Content {
+	position:absolute; 
+	left:280px;
+	top:225px;
+	width:701px; 
+	height:372px; 
+	font-size:12px; 
+	z-index:1;
+}
+#ContentTop {
+	position:absolute; 
+	left:280px;
+	top:159px;
+	width:714px; 
+	height:180px; 
+	font-size:12px; 
+	z-index:1;
+}
+#ContentFull {
+	position:absolute; 
+	left:280px;
+	top:223px;
+	width:714px; 
+	height:180px; 
+	font-size:12px; 
+	z-index:1;
+}/*
+#ContentLeft {
+	position:absolute; 
+	left:280px;
+	top:219px;
+	width:381; 
+	height:180px; 
+	font-size:12px; 
+	z-index:1;
+}*/
+#ContentLeftLong {
+	position:absolute; 
+	left:280px;
+	top:219px;
+	width:392px; 
+	height:180px; 
+	font-size:12px; 
+	z-index:1;
+}
+.ctTitle {
+	position:absolute; 
+	left:280px;
+	top:155px;
+	width:689px; 
+	height:24px; 
+	z-index:5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:18px;
+}
+.ctSubTitle {
+	position:absolute; 
+	left:280px;
+	top:188px;
+	width:720px; 
+	height:22px; 
+	z-index:5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:14px;
+	
+}
+.bgbanner {
+	position:absolute; 
+	left:0px;
+	top:0;
+	width:340px; 
+	height:114px; 
+	z-index:3;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+.bgBody {
+	position:absolute;
+	left:0px;
+	top:-119px;
+	width:1019px;
+	height:561px;
+	z-index:-5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: url(../sysimages/interface_1.jpg );
+	
+}
+
+.bgfooter {
+	position:relative;
+	left:0px;
+	bottom: -2px;
+	width:1019px;
+	height:20px;
+	z-index:5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: url(../sysimages/prompt_area.jpg) no-repeat bottom left;
+	
+}
+.bgfooterStatic {
+	position:absolute;
+	left:0px;
+	top:616px;
+	width:1018px;
+	height:48px;
+	z-index:11;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-image: url(../sysimages/prompt_area.jpg);
+}	
+.bgColumn{
+	position:relative;
+	left:-10px;
+	top:-457px;
+	width:48px;
+	height:561px;
+	z-index:-2;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-image: url(../sysimages/column.jpg);
+	
+}
+.bgRepeatMain{
+	position:relative;
+	left:-10px;
+	top:104px;
+	width:1019px;
+	z-index:-3;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: url(../sysimages/interface_03s.jpg) repeat-y;
+	min-height: 100%; /* for compliant browsers */ 
+	
+}
+* html #content {height: 100%;} 
+#Exit {
+	position:absolute;
+	left:839px;
+	top:88px; 
+	width:91px; 
+	height:27px; 
+	z-index:5;
+}
+
+
+#ExitConfirm {
+	position:absolute;
+	width:434px;
+	height:49px;
+	z-index:10;
+	left: 500px;
+	top: 148px;
+	visibility: hidden;
+}
+p.popClose{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+p.promptText{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#graphic {
+	position:absolute; 
+	left:675px;
+	top:154px;
+	width:324px; 
+	height:461px; 
+	z-index:0;
+}
+
+#graphicBottom {
+	position:absolute; 
+	left:141px;
+	top:368px;
+	width:585px; 
+	height:249px; 
+	z-index:0;
+}
+#graphicBottom2 {
+	position:absolute; 
+	left:20px;
+	top:268px;
+	width:585px; 
+	height:207px; 
+	z-index:0;
+}
+#MainMenu {
+	position:absolute;
+	left:119px;
+	top:626px; 
+	width:94px; 
+	height:1px; 
+	z-index:1;
+}
+#MainMenuDynamic {
+	position:relative;
+	left:119px;
+	top:19px; 
+	width:94px; 
+	height:1px; 
+	z-index:1;
+}
+
+#mnuMyCourse {
+	position:absolute;
+	left:157px;
+	top:689px; 
+	width:100px; 
+	height:1px; 
+	z-index:1;
+}
+
+
+#navGraphic {
+	position:absolute; 
+	left:-50px;
+}
+
+#pageN {
+	position:absolute; 
+	left:65px;
+	top:93px;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+	width:700px; 
+	height:19px; 
+	z-index:1;
+}
+#dykPopLarge {
+	position:absolute;
+	width:733px;
+	left: 276px;
+	top: 118px;
+	border: 1px solid #3f0f01;
+	visibility:hidden;
+	background-color: #C0B3A0;
+	z-index: 10;
+	padding:5px;
+	font-size:12px;
+	height: 452px;
+	}
+#legBranch {
+	position:absolute;
+	width:715px;
+	left: 276px;
+	top: 150px;
+	border: 1px solid #000000;
+	visibility:hidden;
+	background-color: #C0B3A0;
+	z-index: 10;
+	padding:5px;
+	font-size:12px;
+}
+
+#judBranch {
+	position:absolute;
+	width:715px;
+	left: 276px;
+	top: 150px;
+	border: 1px solid #000000;
+	visibility:hidden;
+	height: 377px;
+	background-color: #C0B3A0;
+	z-index: 10;	
+	padding:5px;
+	font-size:12px;
+}
+
+#execBranch {
+	position:absolute;
+	width:715px;
+	left: 276px;
+	top: 150px;
+	border: 1px solid #000000;
+	visibility:hidden;
+	height: 198px;
+	background-color: #C0B3A0;
+	z-index: 10;
+	padding:5px;
+	font-size:12px;
+}
+#popBranchLarge {
+	position:absolute;
+	width:728px;
+	left: 276px;
+	top: 130px;
+	border: 1px solid #000000;
+	visibility:hidden;
+	height: 198px;
+	background-color: #C0B3A0;
+	z-index: 10;
+}
+
+
+#Prompt {
+	position:absolute;
+	left:359px;
+	top:642px; 
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	width:497px; 
+	height:30px; 
+	z-index:1;
+}
+#PromptDynamic {
+	position:relative;
+	left:364px;
+	top:-4px; 
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	width:485px; 
+	height:30px; 
+	z-index:1;
+}
+
+#SkipNav {
+	position:absolute; 
+	left:1023px;
+	top:70px;
+	width:15px; 
+	height:10px; 
+}
+
+#TopicH {
+	position:absolute; 
+	left:65px;
+	top:116px;
+	font-size: 8pt;
+	font-weight: bold;
+	text-align:right;
+	color: #000000;
+	width:925px; 
+	height:14pt; 
+	z-index:10;
+}
+#dyk{
+	position:absolute; 
+	left:892px;
+	top:524px;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000000;
+	width:119px; 
+	height:75pt; 
+	z-index:1;
+}
+#menu {
+	position:absolute; 
+	left:65px;
+	top:155px;
+	font-size: 12px;
+	color: #330066;
+	width:192px; 
+	z-index:10;
+}
+#bottom {
+	position:absolute; 
+	left:280px;
+	top:349px;
+	font-size: 10pt;
+	color: #330066;
+	height: 254px;
+	width:715px; 
+	z-index:1;
+}

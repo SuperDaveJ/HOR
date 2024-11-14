@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Main Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="HOR.css" title = "horCSS">
+<script language="JavaScript" type="text/JavaScript" src="scripts/access.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="scripts/APIWrapper.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="scripts/SCOFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="scripts/HORFunctions.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="scripts/functions.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+
+initializePage();
+
+MM_reloadPage(true);
+
+function popConfirm(){
+	if ( intVersion == 2 ) { // Normal version
+		MM_showHideLayers('ExitConfirm','','show')
+	} else {
+		if (confirm("Do you wish to exit the course?")==true) exitCourse();
+	}
+}
+
+
+
+function popConfirm(){
+	if ( intVersion == 2 ) { // Normal version
+		MM_showHideLayers('ExitConfirm','','show')
+	} else {
+		if (confirm("Do you wish to exit the course?")==true) exitCourse();
+	}
+}
+
+function updateMenu() {
+	closing = false;
+	if (intVersion == 1) { //508 version
+		document.getElementById("normal").style.visibility = "hidden"
+		document.getElementById("sec508").style.visibility = "visible"
+		for (var i=1; i<=nLesson; i++) {
+			//set lessons status
+			if (arrLessonStatus[i-1] == 3) {
+				eval("document.getElementById('les" + (i) + "Status').innerText='Lesson Status: Completed.'");
+			} else {
+				eval("document.getElementById('les" + (i) + "Status').innerText='Lesson Status: Incomplete.'");
+			}
+		}
+	} else { //normal version
+		document.getElementById("normal").style.visibility = "visible"
+		document.getElementById("sec508").style.visibility = "hidden"
+		//display buttons
+		if (verNumber == 4) {
+			// LMS version - display completion status
+			for (i=1; i<=nLesson; i++) {
+				if (arrLessonStatus[i-1] == 3) {
+					eval("document.getElementById('incomplete" + (i) + "').style.visibility = 'hidden'");
+					eval("document.getElementById('completed" + (i) + "').style.visibility = 'visible'");
+				} else {
+					eval("document.getElementById('incomplete" + (i) + "').style.visibility = 'visible'");
+					eval("document.getElementById('completed" + (i) + "').style.visibility = 'hidden'");
+				}
+			}
+		} else {
+			//Normal CD version
+			for (i=1; i<=nLesson; i++) {
+				eval("document.getElementById('incomplete" + (i) + "').style.visibility = 'visible'");
+				eval("document.getElementById('completed" + (i) + "').style.visibility = 'hidden'");
+			}
+		}
+	}
+}
+
+function gotoPage508(iLes, pgURL) {
+	if ( verNumber == 3 ) { //508 LMS version
+		if ( (iLes == 1) || (arrLessonStatus[iLes-2] >= 2) )
+			window.location = pgURL + "?ver=" + verNumber
+		else
+			alert("You have to complete the previous module first.")
+	} else window.location = pgURL + "?ver=" + verNumber
+}
+
+function openNRC(page){
+	var w = window.open(page, "NRC_Information", "width=795, height=545,resizable=no");
+	
+}
+/*
+*	FUNCTION: launchResource
+*/
+function launchATH(URL){
+	popupWin= window.open(URL,"About_the_House","toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,copyhistory=no,scrollbars=no,left=50,top=100,width=1020,height=670");
+}
+/*
+*	FUNCTION: launchResource
+*/
+function launchWTTN(URL){
+	popupWin1= window.open(URL,"Welcome_to_the_Neighborhood","toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,copyhistory=no,scrollbars=no,left=50,top=100,width=920,height=710");
+}
+//-->
+/*
+*	FUNCTION: launchResource
+*/
+function launchTimeLine(URL){
+	popupWin2= window.open(URL,"New_Employee_Timeline","toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,copyhistory=no,scrollbars=yes,left=50,top=100,width=1020,height=670");
+}
+//-->
+//-->
+/*
+*	FUNCTION: launchResource
+*/
+function launchWelcome(URL){
+	popupWin0= window.open(URL,"Welcome","toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,copyhistory=no,scrollbars=no,left=50,top=100,width=1020,height=670");
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style2 {color: #FFFFFF}
+body {
+	background-color: #FFFFFF;
+}
+.style4 {color: #FFFFFF; font-weight: bold; }
+#Layer1 {
+	position:absolute;
+	left:88px;
+	top:505px;
+	width:544px;
+	height:79px;
+	z-index:11;
+}
+#Layer2 {
+	position:absolute;
+	left:0px;
+	top:662px;
+	width:1020px;
+	height:63px;
+	z-index:12;
+}
+.style6 {font-size: 14px}
+.style7 {color: #000000}
+-->
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" onLoad="updateMenu(); MM_preloadImages('systemImages/mod1_2.jpg','systemImages/mod2_2.jpg','systemImages/mod3_2.jpg','systemImages/yes_2.jpg','systemImages/no_2.jpg')" onUnload="if (closing) exitCourse(false)">
+<div class="bgbanner"><img src="sysimages/banner.jpg" alt="Banner with text saying U.S. House of Representatives New Employee Orientation and seal of the House of Representatives." width="1019" height="114" /></div>
+<div class="bgBody3"></div>
+<!-- =================== Normal Version Starts ====================== -->
+<div id="normal" style="visibility:hidden">
+
+<!-- ======================== Begin of Buttons Layer ============================== -->
+<div id="buttons" style="position:absolute; width:391px; height:215px; z-index:1; left: 153px; top: 286px;"> 
+<!-- ============== incomplete buttons =================== -->
+   <div id="incomplete4" style="position:absolute; left:-1px; top:0px; visibility:hidden"><a href="javascript:launchWelcome('module0/00010.htm')" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image4','','systemImages/house_leadership_1.jpg',1)" onMouseOver="MM_swapImage('Image4','','systemImages/house_leadership_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/house_leadership_0.jpg" alt="Welcome from House Leadership" name="Image4" width="384"  height="21" border="0" id="Image4"></a></div> 
+   <div id="incomplete1" style="position:absolute; left:-1px; top:30px; visibility:hidden"><a href="javascript:launchATH('lesson1/11010.htm')" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image1','','systemImages/mod1_1.jpg',1)" onMouseOver="MM_swapImage('Image1','','systemImages/mod1_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod1_0.jpg" alt="About the House" name="Image1" width="384" height="21" border="0" id="Image1"></a><span class="style4"></span></div> 
+  <div id="incomplete2" style="position:absolute; left:-1px; top:60px;  visibility:hidden"><a href="javascript:launchWTTN('module2/gameboard.htm')" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image2','','systemImages/mod2_1.jpg',1)" onMouseOver="MM_swapImage('Image2','','systemImages/mod2_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod2_0.jpg" alt="Welcome to the House" name="Image2" width="384" height="21" border="0" id="Image2"></a></div> 
+  <div id="incomplete3" style="position:absolute; left:-1px; top:90px;  visibility:hidden"><a href="javascript:launchTimeLine('module3/31010.htm')" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Image3','','systemImages/mod3_1.jpg',1)" onMouseOver="MM_swapImage('Image3','','systemImages/mod3_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod3_0.jpg" alt="New Employee Timeline" name="Image3" width="384" height="21" border="0" id="Image3"></a></div> 
+  <div id="incomplete5" style="position:absolute; left:30px; top:150px; visibility:visible; width: 367px;">
+    <div align="center" class="style6"><span class="style2">After you have completed the New Employee Orientation, please take our</span> <a href="javascript:launchTimeLine('http://caosurveys.house.gov/surveys/se.ashx?s=76E7C8FE54DB0D08')">Survey</a><span class="style2">.</span></div>
+  </div>   <div id="incomplete6" style="position:absolute; left:30px; top:250px;  visibility:visible">
+    <div align="center" class="style6 style7">The New Employee Orientation Program is a service provided by the Office of the CAO. For assistance, contact the HouseNet Team. </div>
+  </div> 
+ 
+  
+<!-- ============== completed buttons =================== -->
+  <div id="completed1" style="position:absolute; width:200px;height:20px;left:0px;top:0px; visibility:hidden"><a href="javascript:window.location='lesson1/11010.htm?ver='+verNumber" onMouseOver="MM_swapImage('Image21','','systemImages/mod1_2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod1_complete.jpg" name="Image21" width="263" height="22" border="0" id="Image21"></a></div> 
+  <div id="completed2" style="position:absolute; width:200px; height:20px; left:-1px; top:40px; visibility:hidden;"><a href="#" onMouseOver="MM_swapImage('Image22','','systemImages/mod2_2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod2_complete.jpg" name="Image22" width="295" height="22" border="0" id="Image22"></a></div> 
+  <div id="completed3" style="position:absolute; width:200px;height:20px;left:-1px;top:80px; visibility:hidden"><a href="#" onMouseOver="MM_swapImage('Image23','','systemImages/mod3_2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/mod3_complete.jpg" name="Image23" width="317" height="22" border="0" id="Image23"></a></div> 
+</div> <div id="completed4" style="position:absolute; width:200px;height:20px;left:-1px;top:100px; visibility:hidden"></div> 
+</div>  
+
+<!-- ======================== End of Buttons Layer ============================== -->
+
+  <div id="ExitConfirm" style="position:absolute; width:325px; height:210px; z-index:10; top:269px; left:642px; visibility:hidden" > 
+    <table width="309" height="180"  border="3" bordercolor="#48545E" background="../systemImages/exitBox.jpg">
+  <tr>
+    <td background="systemImages/exitBox.jpg"><table width="100%" height="177" border="0">
+          <tr> 
+          <td width="11%">&nbsp;</td>
+          <td width="40%">&nbsp;</td>
+          <td width="42%">&nbsp;</td>
+          <td width="11%">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF;"><span class="style4 style2">Do you wish to exit the course?</span></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+            <td height="39">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+            <td height="60">&nbsp;</td>
+          <td><div align="center"><a href="javascript:exitCourse(true);" onMouseOver="MM_swapImage('ExitYes','','systemImages/yes_2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/yes_0.jpg" name="ExitYes" width="64" height="27" border="0" id="ExitYes"></a></div></td>
+          <td><div align="center"><a href="javascript:MM_showHideLayers('ExitConfirm','','hide');" onMouseOver="MM_swapImage('ExitNo','','systemImages/no_2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/no_0.jpg" name="ExitNo" width="64" height="27" border="0" id="ExitNo"></a></div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</div>
+</div> <!-- End of normal layer -->
+<!-- =================== Normal Version Ends ====================== -->
+
+<!-- =================== Section 508 Version Starts ================== -->
+<div id="sec508" style="position:absolute; width:700px; height:100px; z-index:10; top:0px; left:0px; visibility:hidden">
+<table>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td>Welcome to the NRC Incident Response Overview Training.</td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td>Select one of the lessons below.</td>
+</tr>
+<tr>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td><a href="javascript:gotoPage508(1,'Lesson1/11010.htm')">Emergency Response Overview</a>&nbsp;&nbsp; <span id="les1Status">Not started</span></td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td><a href="javascript:gotoPage508(2,'Lesson2/12010.htm')">Event Classification and Response Modes</a>&nbsp;&nbsp; <span id="les2Status">Not started</span></td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td><a href="jjavascript:gotoPage508(3,'Lesson3/13010.htm')">NRC Response Operations</a>&nbsp;&nbsp; <span id="les3Status">Not started</span></td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td><a href="javascript:gotoPage508(4,'Lesson4/14010.htm')">General NRC Response Team Member Instructions</a>&nbsp;&nbsp; <span id="les4Status">Not started</span></td>
+</tr>
+<tr>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td width="40px">&nbsp;</td>
+	<td><a href="javascript:popConfirm();">Exit</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" src="scripts/IEfix.js"></script>
+
+<!-- =================== Section 508 Version Ends ================== -->
+  <div class="helpMain" id="helpMain">
+<a href="javascript:launchHelp('help/41010.htm',1024,768);" onBlur="MM_swapImgRestore()" onFocus="MM_swapImage('Help','','systemImages/help_1.jpg',1)"  onMouseOver="MM_swapImage('Help','','systemImages/help_1.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="systemImages/help_0.jpg" alt="Help" name="Help" width="65" height="33" border="0"></a></div>
+<div class="bgfooterMain"></div>  
+</body>
+</html>

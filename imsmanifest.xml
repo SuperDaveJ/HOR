@@ -1,0 +1,363 @@
+<?xml version = "1.0"?>
+<manifest identifier="FS_RPR_Manifest" version="1.0"
+       xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+       xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+       xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                           http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                           http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+	<metadata>
+    	<schema>ADL SCORM</schema>
+    	<schemaversion>1.2</schemaversion>
+    	<imsmd:lom>
+      		<imsmd:general>
+        		<imsmd:title>
+          			<imsmd:langstring xml:lang="en-US">us_horep</imsmd:langstring>
+        		</imsmd:title>
+      		</imsmd:general>
+    	</imsmd:lom>
+	</metadata>
+
+   <organizations default = "us_horep">
+      	<organization identifier = "us_horep">
+         	<title>U.S. House of Representatives</title>
+         	<item identifier="RPR01" identifierref="us_horep_SCO">
+            		<title>New Employee Orientation</title>
+		</item>
+   	</organization>
+   </organizations>
+
+   <resources>
+      <resource identifier="us_horep_SCO" type="webcontent" adlcp:scormtype="sco" href="index.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>fs_ra.xml</adlcp:location>
+         </metadata>
+         <file href="index.htm" />
+         <file href="mainmenu.htm" />
+         <dependency identifierref="module0Files"/>
+		 <dependency identifierref="module1Files"/>
+         <dependency identifierref="module2Files"/>
+         <dependency identifierref="module3Files"/>
+		 <dependency identifierref="module4Files"/>
+	 	 <dependency identifierref="supportFiles" />
+	 	 <dependency identifierref="imageFiles" />
+      </resource>
+
+      <resource identifier="module0Files" type="webcontent" adlcp:scormtype="asset">
+         <file href="module0/00010.htm" />
+      </resource>
+	  
+      <resource identifier="module1Files" type="webcontent" adlcp:scormtype="asset"> 
+	     <file href="lesson1/11010.htm" /> 
+		 <file href="lesson1/11020.htm" /> 
+		 <file href="lesson1/11030.htm" /> 
+		 <file href="lesson1/11040.htm" /> 
+		 <file href="lesson1/11050.htm" /> 
+	     <file href="lesson1/11060.htm" /> 
+		 <file href="lesson1/11070.htm" /> 
+		 <file href="lesson1/11080.htm" /> 
+		 <file href="lesson1/11090.htm" /> 
+		 <file href="lesson1/11100.htm" /> 
+		 <file href="lesson1/11120.htm" /> 
+		 <file href="lesson1/11130.htm" /> 		 		 
+		 <file href="lesson1/images/a0101_0652.swf" />
+		 <file href="lesson1/images/g0101_001.png" />
+		 <file href="lesson1/images/g0101_002.png" />
+		 <file href="lesson1/images/g0101_003.png" />
+		 <file href="lesson1/images/g0101_004.png" />
+		 <file href="lesson1/images/g0101_005.png" />
+		 <file href="lesson1/images/g0101_007.png" />
+		 <file href="lesson1/images/g0101_008.png" />
+		 <file href="lesson1/images/g0101_008a.png" />
+		 <file href="lesson1/images/g0101_008b.png" />
+		 <file href="lesson1/images/g0101_010.png" />
+		 <file href="lesson1/images/g0101_011.png" />
+		 <file href="lesson1/images/g0101_012.png" />
+		 <file href="lesson1/images/g0101_015.png" />
+		 <file href="lesson1/images/g0101_020.png" />
+		 <file href="lesson1/images/g0101_025.png" />
+		 <file href="lesson1/images/g0101_030.png" />
+		 <file href="lesson1/images/g0101_035.png" />
+		 <file href="lesson1/images/g0101_040.png" />
+		 <file href="lesson1/images/g0101_045.png" />
+		 <file href="lesson1/images/g0101_050.png" />
+		 <file href="lesson1/images/g0101_055.png" />
+		 <file href="lesson1/images/g0101_065.png" />
+		 <file href="lesson1/images/g0101_065popa.png" />
+		 
+		 <file href="lesson/12010.htm" /> 
+		 <file href="lesson/12020.htm" /> 
+		 <file href="lesson/12030.htm" /> 
+		 <file href="lesson/12040.htm" /> 
+		 <file href="lesson/12050.htm" /> 
+		 <file href="lesson/12060.htm" /> 
+		 <file href="lesson/12070.htm" /> 
+		 <file href="lesson/12080.htm" /> 
+		 <file href="lesson/12090.htm" /> 
+		 <file href="lesson/12100.htm" /> 
+		 <file href="lesson/12110.htm" /> 
+		 <file href="lesson/12115.htm" /> 
+		 <file href="lesson/12120.htm" /> 
+		 <file href="lesson/12130.htm" /> 
+		 <file href="lesson/12140.htm" /> 
+		 <file href="lesson/12145.htm" /> 
+		 <file href="lesson/12150.htm" /> 
+		 <file href="lesson/12160.htm" /> 
+		 <file href="lesson/12170.htm" /> 
+		 <file href="lesson/12175.htm" /> 
+		 <file href="lesson/12180.htm" /> 
+		 <file href="lesson/12190.htm" /> 
+		 <file href="lesson/12200.htm" /> 
+		 <file href="lesson/12210.htm" /> 
+		 <file href="lesson/12220.htm" /> 
+		 <file href="lesson/12230.htm" /> 
+		 <file href="lesson/12240.htm" /> 
+		 <file href="lesson/12250.htm" /> 
+		 <file href="lesson/12260.htm" /> 
+		 <file href="lesson/12270.htm" /> 
+		 <file href="lesson/12280.htm" /> 
+		 <file href="lesson/12290.htm" /> 
+		 <file href="lesson/12300.htm" /> 
+		 <file href="lesson/12310.htm" /> 
+		 <file href="lesson/12320.htm" /> 
+		 <file href="lesson/12330.htm" /> 
+		 <file href="lesson/12340.htm" /> 
+		 <file href="lesson/12350.htm" /> 
+		 <file href="lesson/12360.htm" /> 
+		 <file href="lesson/12370.htm" /> 
+		 <file href="lesson/12380.htm" /> 
+		 <file href="lesson/12390.htm" /> 
+		 <file href="lesson/12400.htm" /> 
+		 <file href="lesson2/images/a0102_015.swf" />
+		 <file href="lesson2/images/a0102_020.swf" />
+		 <file href="lesson2/images/a0102_105.swf" />		 		 
+		 <file href="lesson2/images/g0101_001.png" />
+ 		 <file href="lesson2/images/g0102_005.png" />
+		 <file href="lesson2/images/g0102_010.png" />
+		 <file href="lesson2/images/g0102_020popa.png" />
+		 <file href="lesson2/images/g0102_025.png" />
+		 <file href="lesson2/images/g0102_030.png" />
+		 <file href="lesson2/images/g0102_040.png" />
+		 <file href="lesson2/images/g0102_045.png" />
+		 <file href="lesson2/images/g0102_050.png" />
+		 <file href="lesson2/images/g0102_055.png" />
+		 <file href="lesson2/images/g0102_060.png" />
+		 <file href="lesson2/images/g0102_065.png" />
+		 <file href="lesson2/images/g0102_070.png" />
+		 <file href="lesson2/images/g0102_075.png" />
+		 <file href="lesson2/images/g0102_080.png" />
+		 <file href="lesson2/images/g0102_085.png" />
+		 <file href="lesson2/images/g0102_090.png" />
+		 <file href="lesson2/images/g0102_090popa.png" />
+		 <file href="lesson2/images/g0102_100.png" />
+		 <file href="lesson2/images/g0102_107.png" />
+		 <file href="lesson2/images/g0102_110.png" />
+		 <file href="lesson2/images/g0102_115.png" />
+		 <file href="lesson2/images/g0102_115popa.png" />
+		 <file href="lesson2/images/g0102_120.png" />
+		 <file href="lesson2/images/g0102_125.png" />
+		 <file href="lesson2/images/g0102_126.png" />
+		 <file href="lesson2/images/g0102_127.png" />
+		 <file href="lesson2/images/g0102_128.png" />
+		 <file href="lesson2/images/g0102_130.png" />
+		 <file href="lesson2/images/g0102_130popa.png" />
+		 <file href="lesson2/images/g0102_135.png" />
+		 <file href="lesson2/images/g0102_140.png" />
+		 <file href="lesson2/images/g0102_145.png" />
+		 <file href="lesson2/images/g0102_150.png" />
+		 <file href="lesson2/images/g0102_155.png" />
+		 <file href="lesson2/images/g0102_156.png" />
+		 <file href="lesson2/images/g0102_157.png" />
+		 <file href="lesson2/images/g0102_158.png" />
+		 <file href="lesson2/images/g0102_160.png" />
+		 <file href="lesson2/images/g0102_165.png" />
+		 <file href="lesson2/images/g0102_170.png" />
+		 <file href="lesson2/images/g0102_65.png" />
+		 <file href="lesson2/images/shaking_hands_1.png" />
+		 
+      </resource>
+
+      <resource identifier="module2Files" type="webcontent" adlcp:scormtype="asset">
+         <file href="module2/gameboard.htm" />
+         <file href="module2/acronym_list.htm" />
+         <file href="module2/badges.htm" />
+         <file href="module2/benefits.htm" />
+         <file href="module2/building.htm" />
+         <file href="module2/campus_services.htm" />
+         <file href="module2/childcare.htm" />
+         <file href="module2/clearances.htm" />
+         <file href="module2/creditunion.htm" />
+         <file href="module2/dyk.htm" />
+         <file href="module2/employee_rights.htm" />
+         <file href="module2/ethics.htm" />
+         <file href="module2/firstcall.htm" />
+		 <file href="module2/flags.htm" />
+         <file href="module2/fsa.htm" />
+         <file href="module2/healthAndSafety.htm" />
+         <file href="module2/hlc.htm" />
+         <file href="module2/hr.htm" />
+         <file href="module2/HOR.css" />
+         <file href="module2/HORprint.css" />
+         <file href="module2/ice.htm" />
+         <file href="module2/ics.htm" />
+         <file href="module2/insurance.htm" />
+         <file href="module2/leave.htm" />
+         <file href="module2/lis.htm" />
+         <file href="module2/neo.htm" />
+         <file href="module2/oea.htm" />
+         <file href="module2/parking.htm" />
+         <file href="module2/payroll.htm" />
+         <file href="module2/physicians.htm" />
+         <file href="module2/police.htm" />
+         <file href="module2/print.html" />
+         <file href="module2/professional_Development.htm" />
+         <file href="module2/protections.htm" />
+         <file href="module2/researchServices.htm" />
+         <file href="module2/retail.htm" />
+         <file href="module2/retirement.htm" />
+	     <file href="module2/security.htm" />
+         <file href="module2/seminars.htm" />
+		 <file href="module2/slrp.htm" />
+         <file href="module2/sspd.htm" />
+		 <file href="module2/tours.htm" />
+		 <file href="module2/transitBenefits.htm" />
+		 <file href="module2/workersComp.htm" />
+		 <file href="module2/images/gameCirclev17.swf" />
+      </resource>
+
+      <resource identifier="module3Files" type="webcontent" adlcp:scormtype="asset">
+         <file href="module3/31010.htm" />
+         <file href="module3/31020.htm" />
+         <file href="module3/31030.htm" />
+         <file href="module3/31040.htm" />
+         <file href="module3/HOR.css" />
+         <file href="module3/HORa.css" />
+         <file href="module3/HORprint.css" />
+         <file href="module3/m3t1050d.htm" />
+         <file href="module3/m3t1060.htm" />
+         <file href="module3/m3t1060d.htm" />
+         <file href="module3/m3t1070.htm" />
+      </resource>
+
+      <resource identifier="module4Files" type="webcontent" adlcp:scormtype="asset">
+         <file href="help/41010.htm" />
+		 <file href="help/images/NEOP_fig1.jpg" />
+		 <file href="help/images/NEOP_fig2.jpg" />
+		 <file href="help/images/NEOP_fig3.jpg" />
+		 <file href="help/images/NEOP_fig4.jpg" />
+		 <file href="help/images/NEOP_fig5.jpg" />
+		 <file href="help/images/NEOP_fig6.jpg" />
+		 <file href="help/HORprint.css" />
+		 <file href="help/HOR.css" />
+		 <file href="help/HORa.css" />
+      </resource>
+	  
+      <resource identifier="supportFiles" type="webcontent" adlcp:scormtype="asset">
+         <file href="usda_fs.css" />
+         <file href="HORpopup.css" />
+		 <file href="HOROriginal.css" />
+		 <file href="HOR.css" />
+		 <file href="scripts/outlineRemoved.js" />
+		 <file href="scripts/pngfix.js" />
+		 <file href="scripts/SCOFunctions.js" />
+		 <file href="scripts/IEfix.js" />
+		 <file href="scripts/HORFunctions.js" />
+		 <file href="scripts/HOR_popups.js" />
+		 <file href="scripts/HOR.js" />
+		 <file href="scripts/functions.js" />
+		 <file href="scripts/APIWrapper.js" />
+		 <file href="scripts/access.js" />
+         <file href="scripts/FS.js" />
+         <file href="scripts/access.js" />
+      </resource>
+
+      <resource identifier="imageFiles" type="webcontent" adlcp:scormtype="asset">
+         <file href="sysimages/banner.jpg" />
+         <file href="sysimages/banner.png" />
+         <file href="sysimages/column.jpg" />		 
+         <file href="sysimages/content_area.jpg" />
+         <file href="sysimages/done_1.jpg" />
+         <file href="sysimages/done_2.jpg" />
+         <file href="sysimages/interface_whitescreen.jpg" />
+         <file href="sysimages/prompt_area.jpg" />
+         <file href="sysimages/skipnav.png" />
+         <file href="sysimages/nextarrow_up_08.jpg" />
+         <file href="sysimages/nextarrow_over_08.jpg" />
+         <file href="systemImages/back_0.jpg" />
+		 <file href="systemImages/back_2.jpg" />
+		 <file href="systemImages/begin_0.jpg" />
+		 <file href="systemImages/begin_2.jpg" />
+		 <file href="systemImages/bottom_nav.jpg" />
+		 <file href="systemImages/closeButton.jpg" />
+		 <file href="systemImages/closeButton.png" />
+		 <file href="systemImages/complete_0.jpg" />
+		 <file href="systemImages/complete_2.jpg" />
+		 <file href="systemImages/coursemap_0.jpg" />
+		 <file href="systemImages/coursemap_2.jpg" />
+		 <file href="systemImages/didUknow.png" />
+		 <file href="systemImages/done_0.jpg" />
+		 <file href="systemImages/done_2.jpg" />
+		 <file href="systemImages/exit_0.jpg" />
+		 <file href="systemImages/exit_2.jpg" />
+		 <file href="systemImages/exitBox.jpg" />
+		 <file href="systemImages/exitBox2.jpg" />
+		 <file href="systemImages/forward_0.jpg" />
+		 <file href="systemImages/forward_2.jpg" />
+		 <file href="systemImages/help_0.jpg" />
+		 <file href="systemImages/help_1.jpg" />
+		 <file href="systemImages/house_leadership_0.jpg" />
+		 <file href="systemImages/house_leadership_1.jpg" />
+		 <file href="systemImages/house_leadership_1.png" />
+		 <file href="systemImages/house_leadership_2.png" />
+		 <file href="systemImages/house_leadership_complete.jpg" />
+		 <file href="systemImages/incomplete_0.jpg" />
+		 <file href="systemImages/incomplete_2.jpg" />
+		 <file href="systemImages/lessonMenu.jpg" />
+		 <file href="systemImages/lessonPrototype_1.jpg" />
+		 <file href="systemImages/lessonPrototype_2.jpg" />
+		 <file href="systemImages/lessonPrototype_complete.jpg" />
+		 <file href="systemImages/main_menu.jpg" />
+		 <file href="systemImages/mainmenu_0.jpg" />
+		 <file href="systemImages/mainmenu_1.jpg" />
+		 <file href="systemImages/menu_body.jpg" />
+		 <file href="systemImages/menuButton_0.png" />
+		 <file href="systemImages/menuButton_2.png" />
+		 <file href="systemImages/menuButton_complete.png" />
+		 <file href="systemImages/mod1_0.jpg" />
+		 <file href="systemImages/mod1_0.png" />
+		 <file href="systemImages/mod1_1.jpg" />
+		 <file href="systemImages/mod1_2.jpg" />
+		 <file href="systemImages/mod1_2.png" />
+		 <file href="systemImages/mod1_complete.jpg" />
+		 <file href="systemImages/mod1_complete.png" />
+		 <file href="systemImages/mod2_0.jpg" />
+		 <file href="systemImages/mod2_0.png" />
+		 <file href="systemImages/mod2_1.jpg" />
+		 <file href="systemImages/mod2_2.jpg" />
+		 <file href="systemImages/mod2_2.png" />
+		 <file href="systemImages/mod2_complete.jpg" />
+		 <file href="systemImages/mod2_complete.png" />
+		 <file href="systemImages/mod3_0.jpg" />
+		 <file href="systemImages/mod3_0.png" />
+		 <file href="systemImages/mod3_1.jpg" />
+		 <file href="systemImages/mod3_2.jpg" />
+		 <file href="systemImages/mod3_2.png" />
+		 <file href="systemImages/mod3_complete.jpg" />
+		 <file href="systemImages/mod3_complete.png" />
+		 <file href="systemImages/no_0.jpg" />
+		 <file href="systemImages/no_2.jpg" />
+		 <file href="systemImages/privacy_0.jpg" />
+		 <file href="systemImages/privacy_2.jpg" />
+		 <file href="systemImages/smallButton_0.png" />
+		 <file href="systemImages/smallButton_2.png" />
+		 <file href="systemImages/wecome_screen.jpg" />
+		 <file href="systemImages/yes_0.jpg" />
+		 <file href="systemImages/yes_2.jpg" />		 
+      </resource>
+   </resources>
+
+</manifest>
